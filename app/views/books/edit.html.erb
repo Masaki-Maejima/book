@@ -1,0 +1,20 @@
+<h1>書籍を編集する</h1>
+
+<%= form_for(@book) do |f| %>
+
+  <p>
+    <%= f.label :title %>
+    <%= f.text_field :title %>
+  </p>
+
+  <p>
+    <%= f.label :text %>
+    <%= f.text_area :text %>
+  </p>
+
+  <p>
+    <%= f.submit %>
+  </p>
+
+<% end %>
+<%= link_to '戻る',books_path %>
