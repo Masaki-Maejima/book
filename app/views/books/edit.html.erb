@@ -9,12 +9,12 @@
 
   <p>
     <%= f.label :text %>
-    <%= f.text_area :text %>
+    <%= f.text_area :text, class: "w-50 p-3" %>
   </p>
 
   <p>
-    <%= f.submit %>
+    <%= f.submit class: "btn btn-outline-warning" %>
   </p>
 
 <% end %>
-<%= link_to '戻る',books_path %>
+<%= link_to '戻る',books_path, class: "btn btn-light" %>
